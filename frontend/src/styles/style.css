@@ -1,0 +1,107 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: rgb(236, 144, 144);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+}
+.container
+{
+   background-color: rgb(0, 0, 0);
+   padding: 20px 45px 20px 45px;
+   text-align: center;
+   border: 2px solid rgb(255, 222, 33);
+   border-radius: 10px;
+}
+.company-name
+{
+    color: rgb(255, 222, 33);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.paragraph
+{
+    color: rgb(231, 211, 167);
+    font-size: 12px;
+    text-align: center;
+}
+.redline
+{
+    border: 2px solid rgb(255, 0, 0);
+    margin: auto;
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.circle
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: green;
+    text-align: center;
+    font-size: 10x;
+    margin: auto;
+    padding-top: 25px;
+    font-size: 40px;
+    color: rgb(255, 222, 33);
+    background-color: rgb(133, 18, 18);
+    border: 2px solid rgb(255, 222, 33);
+}
+.name
+{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(231, 211, 167);;
+}
+.job
+{
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: red;
+    margin :5px;
+}
+
+.id
+{
+    font-size: 10px;
+    border: 2px solid rgb(255, 222, 33);
+    border-radius: 20px;
+    padding: 5px;
+    color: rgb(255, 222, 33);
+    
+}
+.card
+{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    padding :15px 0px 15px 0px;
+}
+.heading
+{
+    color : rgb(255, 222, 33);
+    padding-right: 10px; 
+}
+.data
+{
+    color: rgb(231, 211, 167);;
+}
+.foot
+{
+    font-size: 10px;
+    color: rgb(255, 222, 33);
+}
