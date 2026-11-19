@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Institute Learning</title>
+
+    <style>
+
+        /* Removing default spacing */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f1f5f9;
+            font-family: Arial, sans-serif;
+            padding: 27px 28px;
+        }
+
+        /* NAVBAR */
+
+        .first_head {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px 35px;
+            background-color: #173f6b;
+            color: white;
+
+            border-radius: 12px;
+        }
+
+        .name {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+
+        /* MAIN CONTENT */
+
+        .container {
+            max-width: 1174px;
+            margin: 35px auto;
+        }
+
+        /* STUDENT PROFILE */
+
+        .second_head {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 28px 30px;
+            background-color: white;
+
+            border: 1px solid #d6e5fa;
+            border-radius: 12px;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .profile span:first-child {
+            font-size: 28px;
+            font-weight: bold;
+            color: #173f6b;
+        }
+
+        .profile span:nth-child(2) {
+            color: #64748b;
+            font-size: 16px;
+        }
+
+        .profile span:last-child {
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .status {
+            background-color: #dcfce7;
+            color: #15803d;
+            padding: 10px 22px;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        /* LEARNING STATISTICS */
+
+        .third_head {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            margin-top: 28px;
+        }
+
+        .learning {
+            font-size: 23px;
+            font-weight: bold;
+            color: #173f6b;
+        }
+
+        .learning_stats {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .learning_stats div {
+            flex: 1;
+            background-color: white;
+            border: 1px solid #d6e5fa;
+            border-radius: 12px;
+
+            padding: 28px;
+            text-align: center;
+        }
+
+        .learning_stats h2 {
+            font-size: 36px;
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        .learning_stats p {
+            color: #64748b;
+            font-size: 16px;
+        }
+
+        /* TECHNICAL SKILLS */
+
+        .four_head {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+
+            padding: 28px 30px;
+            margin-top: 28px;
+
+            background-color: white;
+            border: 1px solid #d6e5fa;
+            border-radius: 12px;
+        }
+
+        .tech_skill {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .tech_skill span {
+            background-color: #dbeafe;
+            color: #1d4ed8;
+
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        /* NOTIFICATION */
+
+        .notification {
+            background-color: #eff6ff;
+            color: #1d4ed8;
+
+            padding: 20px;
+            margin-top: 28px;
+
+            border-left: 5px solid #2563eb;
+            border-radius: 5px;
+        }
+
+        /* FOOTER */
+
+        .footer {
+            background-color: #173f6b;
+            color: white;
+
+            text-align: center;
+            padding: 25px;
+
+            margin-top: 28px;
+            border-radius: 12px;
+
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        /* RESPONSIVE DESIGN */
+
+        @media (max-width: 600px) {
+
+            body {
+                padding: 15px;
+            }
+
+            .first_head {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .menu {
+                gap: 15px;
+            }
+
+            .second_head {
+                gap: 15px;
+            }
+
+            .learning_stats {
+                flex-direction: column;
+            }
+
+            .profile span:first-child {
+                font-size: 22px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <div class="first_head">
+
+            <div>
+                <span class="name">BRAVINO</span>
+            </div>
+
+            <nav class="menu">
+                <span>Dashboard</span>
+                <span>Courses</span>
+                <span>Profile</span>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="container">
+
+        <!-- STUDENT PROFILE -->
+
+        <section class="second_head">
+
+            <div class="profile">
+
+                <span>Bharath Kumar</span>
+                <span>Java Developer</span>
+                <span>Batch : JAVA</span>
+
+            </div>
+
+            <span class="status">ACTIVE</span>
+
+        </section>
+
+
+        <!-- LEARNING STATISTICS -->
+
+        <section class="third_head">
+
+            <h2 class="learning">Learning Statistics</h2>
+
+            <div class="learning_stats">
+
+                <div>
+                    <h2>12</h2>
+                    <p>Total Courses</p>
+                </div>
+
+                <div>
+                    <h2>8</h2>
+                    <p>Completed</p>
+                </div>
+
+                <div>
+                    <h2>4</h2>
+                    <p>Pending</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TECHNICAL SKILLS -->
+
+        <section class="four_head">
+
+            <h2 class="learning">Technical Skills</h2>
+
+            <div class="tech_skill">
+
+                <span>Java</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>SQL</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- NOTIFICATION -->
+
+        <div class="notification">
+
+            New Java Advanced Module is available.
+            Keep learning!
+
+        </div>
+
+
+        <!-- FOOTER -->
+
+        <footer class="footer">
+
+            KEEP LEARNING • KEEP GROWING
+
+        </footer>
+
+    </main>
+
+</body>
+</html>
